@@ -1,2 +1,29 @@
-.home{
+.home {
+    .wrapper {
+        height: 85vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .welcome {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+
+            .image-content {
+                img {
+                    width: 350px;
+                    height: 155px;
+                }
+
+                &::after{
+                    content: 'ananananan';
+                }
+            }
+
+
+        }
+
+    }
 }
