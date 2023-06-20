@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "../styles/components/Header.scss";
 import "../styles/App.scss";
 
@@ -6,25 +8,26 @@ const Header = () => {
   return (
     <div className="header">
       <div className="container">
-        <div className="wrapper">
-
+        <div className="header-wrapper">
           <div className="logo">
-            <img
-              src="https://uploads-ssl.webflow.com/64495ea0fca2f664fcbc78f0/644a2ee325637028c19e100f_Logo.webp"
-              alt="logo"
-            />
+            <Link to="/">
+              <img
+                src="https://uploads-ssl.webflow.com/64495ea0fca2f664fcbc78f0/644a2ee325637028c19e100f_Logo.webp"
+                alt="logo"
+              />
+            </Link>
           </div>
 
           <div className="nav">
             <ul>
               <li>
-                <a href="">Home</a>
+                <a href="">HOME</a>
               </li>
               <li>
-                <a href="">About Us</a>
+                <a href="">ABOUT US</a>
               </li>
               <li>
-                <a href="">Menu</a>
+                <a href="">MENU</a>
               </li>
             </ul>
           </div>
@@ -40,7 +43,6 @@ const Header = () => {
               <path d="M4.93,30.34H27.41V25.76a25.77,25.77,0,0,1,51.53,0v4.58H101.6a4.91,4.91,0,0,1,3.47,1.45h0a4.9,4.9,0,0,1,1.44,3.48v69.9a17.75,17.75,0,0,1-17.7,17.7H17.7A17.75,17.75,0,0,1,0,105.18V35.28A4.91,4.91,0,0,1,1.45,31.8h0a4.91,4.91,0,0,1,3.47-1.45Zm28.76,0h39V25.76a19.49,19.49,0,0,0-39,0v4.58Zm-6.28,13V36.62H6.28v62h94V36.62H78.94v6.76a6.48,6.48,0,1,1-6.28-.12V36.62h-39v6.71a6.48,6.48,0,1,1-6.28,0Z" />
             </svg>
           </div>
-          
         </div>
       </div>
     </div>

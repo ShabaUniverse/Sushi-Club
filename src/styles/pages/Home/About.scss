@@ -1,0 +1,139 @@
+@import '../../variables.scss';
+
+.about {
+    padding: 30px 0;
+
+    .text {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        margin-bottom: 30px;
+
+        p {
+            font-size: 80px;
+            color: $red;
+            border-bottom: 3px solid $red;
+        }
+
+        span {
+            font-size: 30px;
+            margin-left: 30px;
+            text-transform: uppercase;
+            color: $red;
+        }
+    }
+
+    .section-one {
+        height: 300px;
+        width: 100%;
+        background-color: $blue;
+        border-radius: 10px;
+        // position: relative;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        padding: 30px;
+
+        img {
+            height: 385px;
+            width: 485px;
+            position: absolute;
+            left: -10%;
+        }
+
+        .content-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .horizontal {
+                font-size: 28px;
+                color: $pink;
+            }
+
+            .vertical {
+                transform: rotate(90deg);
+                font-size: 28px;
+                color: $pink;
+                opacity: 70%;
+            }
+        }
+
+        .content-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-end;
+
+            h5 {
+                font-size: 30px;
+                color: $red;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 600;
+                color: $pink;
+            }
+        }
+    }
+
+
+    .sectione-two {
+        margin-top: 100px;
+        height: 300px;
+        width: 100%;
+        background-color: $red;
+        border-radius: 10px;
+        // position: relative;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        padding: 30px;
+
+        img {
+            height: 503px;
+            width: 450px;
+            position: absolute;
+            right: -10%;
+        }
+
+        .content-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            h5 {
+                font-size: 30px;
+                color: $blue;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 600;
+                color: $pink;
+            }
+
+        }
+
+        .content-right {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+            align-items: center;
+
+            .horizontal {
+                font-size: 28px;
+                color: $pink;
+            }
+
+            .vertical {
+                transform: rotate(90deg);
+                font-size: 28px;
+                color: $pink;
+                opacity: 70%;
+            }
+        }
+    }
+}

@@ -1,0 +1,111 @@
+@import '../../variables.scss';
+
+.welcome-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70vh;
+
+        .image-content-slogan {
+            position: relative;
+            img {
+                width: 350px;
+                height: 155px;
+            }
+
+            .slogan-top-text {
+                position: absolute;
+                left: auto;
+                top: 10%;
+                right: 1%;
+                bottom: auto;
+                text-transform: uppercase;
+                font-weight: 400;
+                font-size: 14px;
+                font-weight: 500;
+                color: $blue;
+            }
+            .slogan-bottom-text {
+                position: absolute;
+                left: auto;
+                top: auto;
+                left: 1%;
+                bottom: 10%;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-size: 14px;
+                color: $blue;
+            }
+        }
+
+        .fish-image-right {
+            position: absolute;
+            top: auto;
+            bottom: auto;
+            right: 0px;
+            left: auto;
+            width: 320px;
+            height: 420px;
+        }
+
+        .fish-image-left {
+            position: absolute;
+            top: auto;
+            bottom: -5%;
+            right: auto;
+            left: 0px;
+            width: 320px;
+            height: 420px;
+        }
+
+
+    }
+
+    .welcome-intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .top {
+            p {
+                font-size: 45px;
+                color: $red;
+                text-align: center;
+            }
+        }
+
+        .bottom {
+            margin-top: 20px;
+            position: relative;
+            width: 270px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            p{
+                position: absolute;
+                color: white;
+                font-size: 23px;
+                cursor: pointer;
+            }
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+}
