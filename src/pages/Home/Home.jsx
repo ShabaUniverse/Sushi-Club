@@ -5,6 +5,7 @@ import "../../styles/App.scss";
 import Welcome from "./Welcome";
 import Frames from "./Frames";
 import About from "./About";
+import Menu from "./Menu";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <Welcome />
         <Frames />
         <About />
+        <Menu />
       </div>
     </div>
   );

@@ -1,0 +1,27 @@
+@import '../../variables.scss';
+
+.menu {
+    margin-top: 330px;
+    height: 90vh;
+    background-color: $blue;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+
+    .menu-images {
+        background-image: url('../../../../public/images/menu-image.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            color: black;
+            font-size: 30px;
+            font-weight: 600;
+            text-shadow: 3px 3px 20px #ff99cc,
+                -2px 1px 30px #ff99cc;
+        }
+    }
+}
