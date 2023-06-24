@@ -29,7 +29,11 @@ const About = () => {
       </div>
 
       <div className="sectione-two">
-        <img src="../../../public/images/sushi-sticks-about-2.png" alt="" />
+        {/* <img src="../../../public/images/sushi-sticks-about-2.png" alt="" /> */}
+        <img
+          src="https://uploads-ssl.webflow.com/64495ea0fca2f664fcbc78f0/644a4a165b4f8923deeffec1_Sushi-1.webp"
+          alt=""
+        />
         <div className="content-left">
           <h5>QUALITY EXCELLENCE</h5>
           <p>
@@ -41,7 +45,6 @@ const About = () => {
         </div>
 
         <div className="content-right">
-        
           <p className="horizontal">品質の卓越性</p>
           <p className="vertical">品 質 の 卓 越 性</p>
         </div>
