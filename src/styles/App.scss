@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    // border: 1px solid red;
 }
 
 .App {
@@ -14,5 +15,24 @@
 .container {
     width: 1200px;
     margin: 0 auto;
-    // background-color: cornflowerblue;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1220px) {
+    .container {
+        width: 100%;
+    }
 }
