@@ -22,6 +22,14 @@
             }
         }
 
+        .menu-hamburger {
+            display: none;
+            svg {
+                width: 20px;
+                width: 20px;
+            }
+        }
+
         .nav {
             background-color: $blue;
             padding: 10px;
@@ -63,23 +71,52 @@
             }
         }
 
-        .cart {
+        .reservation {
 
             justify-self: end;
             align-self: center;
 
-            svg {
-                width: 30px;
-                height: 30px;
-                fill: $blue;
-                transition: .5s;
+            a {
+                text-decoration: none;
+                color: $blue;
+                text-transform: uppercase;
+                font-weight: 500;
+                transition: 0.3s ease;
 
                 &:hover {
-                    fill: $red;
-                    transition: .5s;
+                    color: $red;
+                    transition: 0.3s ease;
                 }
             }
         }
 
+    }
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+    .header {
+        padding: 10px;
+
+        .header-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .menu-hamburger {
+                display: block;
+            }
+
+            .nav {
+                display: none;
+            }
+
+            .reservation {
+                display: none;
+            }
+        }
     }
 }

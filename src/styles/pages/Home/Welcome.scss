@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    // padding: 30px 0;
 
     .welcome {
         display: flex;
@@ -17,6 +18,7 @@
 
         .image-content-slogan {
             position: relative;
+
             img {
                 width: 350px;
                 height: 155px;
@@ -34,6 +36,7 @@
                 font-weight: 500;
                 color: $blue;
             }
+
             .slogan-bottom-text {
                 position: absolute;
                 left: auto;
@@ -93,7 +96,7 @@
             align-items: center;
             text-align: center;
 
-            p{
+            p {
                 position: absolute;
                 color: white;
                 font-size: 23px;
@@ -107,4 +110,21 @@
         }
     }
 
+}
+
+@media only screen and (max-width: 600px) {
+
+    .welcome-wrapper {
+        .welcome {
+            .fish-image-right {
+                width: 220px;
+                height: 320px;
+            }
+
+            .fish-image-left {
+                width: 200px;
+                height: 300px;
+            }
+        }
+    }
 }

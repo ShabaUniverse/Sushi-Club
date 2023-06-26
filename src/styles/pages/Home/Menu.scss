@@ -1,13 +1,20 @@
 @import '../../variables.scss';
 
 .menu {
+    border-radius: 10px;
     margin-top: 230px;
     height: 90vh;
     background-color: $blue;
     display: grid;
     grid-template-columns: 1.5fr 2fr;
 
+    .menu-content {
+        width: 100%;
+    }
+
     .menu-images {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
         background-image: url('../../../../public/images/menu-image.jpg');
         background-position: center;
         background-repeat: no-repeat;
@@ -17,7 +24,7 @@
         align-items: center;
 
         p {
-            color: black;
+            color: $pink;
             font-size: 30px;
             font-weight: 600;
             text-shadow: 3px 3px 20px #ff99cc,
@@ -25,3 +32,34 @@
         }
     }
 }
+
+@media only screen and (max-width: 1200px) {
+    .menu {
+        margin-top: 200px;
+        background-color: $blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        .menu-images {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        margin-top: 50px;
+        background-color: $blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        .menu-images {
+            display: none;
+        }
+    }
+}
+

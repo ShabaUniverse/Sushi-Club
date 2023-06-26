@@ -8,8 +8,6 @@
         justify-content: space-around;
         align-items: center;
 
-        
-
         p {
             color: $pink;
             font-size: 18px;
@@ -33,6 +31,38 @@
 
         .active {
             color: $red;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .categories {
+        padding: 20px;
+    
+        .categories-list {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 90vw;
+    
+            p {
+                color: $pink;
+                font-size: 13px;
+                margin: 0;
+    
+                &::after {
+                    content:none;
+                }
+    
+                &:hover::after {
+                    width: 30%;
+                    transition: .3s;
+                }
+            }
+    
+            .active {
+                color: $red;
+            }
         }
     }
 }

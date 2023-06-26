@@ -2,9 +2,6 @@
 
 .about {
     padding: 30px 0;
-
-
-
     .text {
         display: flex;
         justify-content: flex-start;
@@ -136,6 +133,122 @@
             }
         }
     }
-
-
 }
+
+@media only screen and (max-width: 700px) {
+
+    .about {
+        .text {
+            p {
+                font-size: 30px;
+                color: $red;
+                border-bottom: 1px solid $red;
+            }
+    
+            span {
+                font-size: 20px;
+                margin-left: 30px;
+                text-transform: uppercase;
+                color: $red;
+            }
+        }
+
+        .section-one {
+            height: 90vh;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: space-between;
+    
+            img {
+                height: 285px;
+                width: 385px;
+            }
+    
+            .content-left {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+                .horizontal {
+                    font-size: 28px;
+                }
+    
+                .vertical {
+                    display: none;
+                }
+            }
+    
+            .content-right {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+    
+                h5 {
+                    font-size: 24px;
+                }
+    
+                p {
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        .sectione-two {
+            height: 100vh;
+            background-color: $red;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+    
+            img {
+                height: 400px;
+                width: 350px;
+                position: absolute;
+                right: 0;
+                top: 170px;
+            }
+    
+            .content-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+    
+                h5 {
+                    font-size: 24px;
+                }
+    
+                p {
+                    font-size: 15px;
+                    line-height: 30px;
+                }
+    
+            }
+    
+            .content-right {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: center;
+                align-items: center;
+    
+                .horizontal {
+                    font-size: 28px;
+                    color: $pink;
+                }
+    
+                .vertical {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+
