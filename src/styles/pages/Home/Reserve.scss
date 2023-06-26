@@ -1,0 +1,122 @@
+@import '../../variables.scss';
+
+.reserve {
+    margin-top: 50px;
+    .reserve-box {
+        height: 50vh;
+        border-radius: 10px;
+        background-color: $red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .text {
+            text-align: center;
+
+            p {
+                font-size: 21px;
+                color: $pink;
+            }
+
+            span {
+                font-size: 65px;
+                color: $pink;
+            }
+        }
+
+        .inputs {
+
+            input {
+                background-color: $red;
+                outline: none;
+                border: 2px solid $pink;
+                border-radius: 5px;
+                padding: 15px;
+                margin: 0 20px;
+                color: $pink;
+                width: 300px;
+
+                &::placeholder {
+                    color: $pink;
+                }
+
+            }
+        }
+
+
+        .sending {
+            button {
+                padding: 15px 25px;
+                background-color: $pink;
+                color: $red;
+                border: none;
+                text-transform: uppercase;
+                font-weight: 600;
+                transition: 0.3s ease;
+                font-size: 18px;
+
+                &:hover {
+                    border-radius: 10px;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .reserve {
+        margin-top: 50px;
+
+        .reserve-box {
+            height: 60vh;
+
+            .inputs {
+                input {
+                    margin: 10px 10px;
+                    width: 180px;
+
+                    &::placeholder {
+                        color: $pink;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 650px) {
+    .reserve {
+        margin-top: 50px;
+        
+        .reserve-box {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            .inputs {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-around;
+
+                input {
+                    margin: 10px 0;
+
+
+                    &::placeholder {
+                        color: $pink;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
