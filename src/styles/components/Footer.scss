@@ -1,0 +1,207 @@
+@import '../variables.scss';
+
+.footer {
+    .footer-content {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: $blue;
+        padding: 40px;
+
+
+        .left {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            .slogan {
+                img {
+                    width: 400px;
+                    height: 170px;
+                }
+
+                p {
+                    font-size: 13px;
+                    color: $pink;
+                }
+            }
+
+            .links {
+                margin-top: 20px;
+
+                svg {
+                    fill: $pink;
+                    margin-right: 20px;
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+        }
+
+
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+
+            .text {
+                p {
+                    color: $pink;
+                }
+            }
+
+            .question {
+                input {
+                    padding: 5px;
+                    border: 1px solid $pink;
+                    color: $pink;
+                    outline: none;
+                    font-size: 14px;
+
+                    &:nth-child(1) {
+                        border-bottom-left-radius: 10px;
+                        border-top-left-radius: 10px;
+                        background-color: $blue;
+                        width: 300px;
+                        height: 70px;
+                    }
+
+                    &:nth-child(2) {
+                        border-bottom-right-radius: 10px;
+                        border-top-right-radius: 10px;
+                        background-color: $red;
+                        border-left: none;
+                        width: 100px;
+                        height: 70px;
+                        cursor: pointer;
+
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        background-color: $blue;
+        text-align: center;
+        p{
+            color: $pink;
+            font-weight: 500;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer {
+        .footer-content {
+
+            .right {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .text {
+                    p {
+                        font-size: 10px;
+                    }
+                }
+
+                .question {
+                    input {
+                        padding: 5px;
+                        border: 1px solid $pink;
+                        color: $pink;
+                        outline: none;
+                        font-size: 14px;
+    
+                        &:nth-child(1) {
+                            border-bottom-left-radius: 10px;
+                            border-top-left-radius: 10px;
+                            background-color: $blue;
+                            width: 200px;
+                            height: 70px;
+                        }
+    
+                        &:nth-child(2) {
+                            border-bottom-right-radius: 10px;
+                            border-top-right-radius: 10px;
+                            background-color: $red;
+                            border-left: none;
+                            width: 50px;
+                            height: 70px;
+                            cursor: pointer;
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .footer {
+        .footer-content {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column-reverse;
+            background-color: $blue;
+            padding: 40px;
+            
+            .left {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 30px;
+    
+                .slogan {
+                    img {
+                        width: 400px;
+                        height: 170px;
+                    }
+    
+                    p {
+                        font-size: 11px;
+                        color: $pink;
+                        text-align: center;
+                    }
+                }
+    
+                .links {
+                    svg {
+                        height: 40px;
+                        width: 40px;
+                    }
+                }
+            }
+    
+    
+            .right {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+    
+                .text {
+                    p {
+                        color: $pink;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    
+        .copyright {
+            background-color: $blue;
+            text-align: center;
+            p{
+                color: $pink;
+                font-weight: 500;
+            }
+        }
+    }
+}
