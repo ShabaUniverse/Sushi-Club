@@ -1,7 +1,6 @@
 import React from "react";
 import "../../styles/pages/Home/Frames.scss";
 
-import ss from "../../../public/images/red-nocorner-frames.png";
 
 const Frames = () => {
   return (

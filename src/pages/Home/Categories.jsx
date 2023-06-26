@@ -1,21 +1,21 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+
 import "../../styles/pages/Home/Categories.scss";
+import { setActiveCategory } from "../../data/slices/menuSlice";
 
-const Categories = () => {
+const Categories = ({categories}) => {
 
-  const [activeCategory, setActiveCategory] = useState({name: 'temaki', id: 1});
+  const dispatch = useDispatch();
 
-  let categories = [
-    { name: "temaki", id: 1 },
-    { name: "rice bowl", id: 2 },
-    { name: "warm dishes", id: 3 },
-    { name: "drinks", id: 4 },
-  ];
+  const {activeCategory} = useSelector((state) => state.menu);
 
   const onClickChange = (obj) => {
-    setActiveCategory(obj.name)
+    dispatch(setActiveCategory(obj.name))
   };
+
+  console.log(activeCategory);
 
   return (
     <div className="categories">

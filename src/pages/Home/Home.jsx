@@ -6,6 +6,9 @@ import Welcome from "./Welcome";
 import Frames from "./Frames";
 import About from "./About";
 import Menu from "./Menu";
+import Reserve from "./Reserve";
+
+
 
 const Home = () => {
   return (
@@ -15,6 +18,7 @@ const Home = () => {
         <Frames />
         <About />
         <Menu />
+        <Reserve />
       </div>
     </div>
   );
