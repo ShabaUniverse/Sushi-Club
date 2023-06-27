@@ -8,7 +8,7 @@ const Frames = () => {
       <div className="first">
         <div className="top">
           <div className="image-box">
-            <img src="../../../public/images/red-nocorner-frames.png" alt="" />
+            <img src="/images/red-nocorner-frames.png" alt="" />
             <p>We dance to a different tuna</p>
           </div>
         </div>
@@ -33,7 +33,7 @@ const Frames = () => {
         </div>
         <div className="bottom">
           <div className="image-box">
-            <img src="../../../public/images/blue-nocorner-frames.png" alt="" />
+            <img src="/images/blue-nocorner-frames.png" alt="" />
             <p>We're your soymate</p>
           </div>
         </div>

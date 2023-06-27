@@ -14,9 +14,6 @@ const Categories = ({categories}) => {
   const onClickChange = (obj) => {
     dispatch(setActiveCategory(obj.name))
   };
-
-  console.log(activeCategory);
-
   return (
     <div className="categories">
       <div className="categories-list">

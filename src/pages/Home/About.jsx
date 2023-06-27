@@ -3,14 +3,14 @@ import "../../styles/pages/Home/About.scss";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="text">
         <p>私たちに関しては</p>
         <span>About us</span>
       </div>
 
       <div className="section-one">
-        <img src="../../../public/images/sushi-sticks-about.png" alt="" />
+        <img src="/images/sushi-sticks-about.png" alt="" />
         <div className="content-left">
           <p className="horizontal">寿司への情熱</p>
           <p className="vertical">寿 司 へ の 情 熱</p>
@@ -29,7 +29,7 @@ const About = () => {
       </div>
 
       <div className="sectione-two">
-        <img src="../../../public/images/sushi-sticks-about-2.png" alt="" />
+        <img src="/images/sushi-sticks-about-2.png" alt="" />
         <div className="content-left">
           <h5>QUALITY EXCELLENCE</h5>
           <p>

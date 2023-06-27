@@ -8,8 +8,6 @@ import About from "./About";
 import Menu from "./Menu";
 import Reserve from "./Reserve";
 
-
-
 const Home = () => {
   return (
     <div className="home">
@@ -25,3 +23,5 @@ const Home = () => {
 };
 
 export default Home;
+
+
