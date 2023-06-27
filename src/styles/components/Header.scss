@@ -25,8 +25,8 @@
         .menu-hamburger {
             display: none;
             svg {
-                width: 20px;
-                width: 20px;
+                width: 25px;
+                width: 25px;
             }
         }
 
@@ -98,7 +98,7 @@
 @media only screen and (max-width: 700px) {
 
     .header {
-        padding: 10px;
+        padding: 10px 30px;
 
         .header-wrapper {
             display: flex;

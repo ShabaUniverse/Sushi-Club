@@ -86,7 +86,8 @@
     .copyright {
         background-color: $blue;
         text-align: center;
-        p{
+
+        p {
             color: $pink;
             font-weight: 500;
         }
@@ -102,6 +103,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
                 .text {
                     p {
                         font-size: 10px;
@@ -115,24 +117,24 @@
                         color: $pink;
                         outline: none;
                         font-size: 14px;
-    
+
                         &:nth-child(1) {
                             border-bottom-left-radius: 10px;
                             border-top-left-radius: 10px;
                             background-color: $blue;
-                            width: 200px;
-                            height: 70px;
+                            width: 220px;
+                            height: 50px;
                         }
-    
+
                         &:nth-child(2) {
                             border-bottom-right-radius: 10px;
                             border-top-right-radius: 10px;
                             background-color: $red;
                             border-left: none;
-                            width: 50px;
-                            height: 70px;
+                            width: 70px;
+                            height: 50px;
                             cursor: pointer;
-    
+
                         }
                     }
                 }
@@ -150,27 +152,27 @@
             flex-direction: column-reverse;
             background-color: $blue;
             padding: 40px;
-            
+
             .left {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
                 margin-top: 30px;
-    
+
                 .slogan {
                     img {
-                        width: 400px;
-                        height: 170px;
+                        width: 350px;
+                        height: 150px;
                     }
-    
+
                     p {
                         font-size: 11px;
                         color: $pink;
                         text-align: center;
                     }
                 }
-    
+
                 .links {
                     svg {
                         height: 40px;
@@ -178,27 +180,48 @@
                     }
                 }
             }
-    
-    
+
+
             .right {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
                 align-items: center;
-    
+
                 .text {
                     p {
                         color: $pink;
                         font-size: 14px;
+                        text-align: center;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .question {
+                    input {
+                        &:nth-child(1) {
+
+                            width: 220px;
+                            height: 50px;
+                        }
+
+                        &:nth-child(2) {
+
+                            width: 70px;
+                            height: 50px;
+
+
+                        }
                     }
                 }
             }
         }
-    
+
         .copyright {
             background-color: $blue;
             text-align: center;
-            p{
+
+            p {
                 color: $pink;
                 font-weight: 500;
             }
