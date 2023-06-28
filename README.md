@@ -1,10 +1,8 @@
-# DopeDoze store
+# Sushi Club
 
 Restauraunt website.
 
 #### [Visit Site](https://sushi-club.netlify.app/)
-
-
 
 ## Tools
 
@@ -13,6 +11,6 @@ Restauraunt website.
 ## Captures
 
 ![Main Page](public/captures/Screenshot-welcome.png)
-![Cart Page](public/captures/Screenshot-intro.png)
-![Cart Page](public/captures/Screenshot-about.png)
-![Product](public/captures/Screenshot-menu.png)
+![](public/captures/Screenshot-intro.png)
+![](public/captures/Screenshot-about.png)
+![](public/captures/Screenshot-menu.png)
