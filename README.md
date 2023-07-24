@@ -2,7 +2,7 @@
 
 Restauraunt website.
 
-#### [Visit Site](https://sushi-club.netlify.app/)
+#### [Demo](https://sushi-club.netlify.app/)
 
 ## Tools
 
